@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXSlider?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.SplitMenuButton?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.SettingsController">
+   <children>
+      <ImageView fitHeight="600.0" fitWidth="500.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../sample/Pi/mainGround.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="105.0" layoutY="263.0" prefHeight="50.0" prefWidth="103.0" text="SOUND" textFill="#b5f0f1">
+         <font>
+            <Font name="MrRobot" size="25.0" />
+         </font></Label>
+      <Label layoutX="105.0" layoutY="341.0" prefHeight="29.0" prefWidth="152.0" text="LANGUAGE" textFill="#b5f0f1">
+         <font>
+            <Font name="MrRobot" size="25.0" />
+         </font></Label>
+      <SplitMenuButton layoutX="274.0" layoutY="341.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="121.0" text="SELECT">
+         <items>
+            <MenuItem mnemonicParsing="false" text="QAZAQSHA">
+               <graphic>
+                  <ImageView fitHeight="40.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../sample/Pi/kazashstan.gif" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </MenuItem>
+            <MenuItem mnemonicParsing="false" text="TURKCE">
+               <graphic>
+                  <ImageView fitHeight="40.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../sample/Pi/220px-Flag_of_Turkey.svg.png" />
+                     </image></ImageView>
+               </graphic></MenuItem>
+         </items>
+      </SplitMenuButton>
+      <Label layoutX="244.0" layoutY="224.0" prefHeight="65.0" prefWidth="26.0" text="-" textFill="RED">
+         <font>
+            <Font name="Impact" size="64.0" />
+         </font></Label>
+      <Label layoutX="367.0" layoutY="229.0" text="+" textFill="#00ff51">
+         <font>
+            <Font name="Impact" size="55.0" />
+         </font></Label>
+      <JFXSlider fx:id="slider" layoutX="242.0" layoutY="281.0" prefHeight="14.0" prefWidth="152.0" style="-fx-background-color: bluck;" />
+      <JFXButton fx:id="bak" buttonType="RAISED" layoutX="260.0" layoutY="401.0" onAction="#bak1" prefHeight="50.0" prefWidth="152.0" text="BACK" textFill="RED">
+         <font>
+            <Font name="MrRobot" size="36.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

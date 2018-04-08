@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXToggleButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <ImageView fitHeight="600.0" fitWidth="500.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Pi/mainGround1.jpg" />
+         </image>
+      </ImageView>
+      <JFXButton fx:id="bam" layoutX="284.0" layoutY="284.0" onAction="#bam1" text="BACK" textFill="RED">
+         <font>
+            <Font name="MrRobot" size="35.0" />
+         </font>
+      </JFXButton>
+      <Label layoutX="127.0" layoutY="123.0" text="CHOOSE YOUR MODE :">
+         <font>
+            <Font name="Impact" size="30.0" />
+         </font>
+      </Label>
+      <JFXToggleButton fx:id="rain" layoutX="34.0" layoutY="384.0" onAction="#rainy" size="15.0" text="RAINY" textFill="#03aaff" toggleLineColor="#45ebd7" unToggleColor="#14a6f5" unToggleLineColor="#fffafa">
+         <toggleColor>
+            <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+               <stops>
+                  <Stop color="BLACK" />
+                  <Stop color="#4ac8e4" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </toggleColor>
+         <font>
+            <Font name="MrRobot" size="20.0" />
+         </font>
+         <toggleGroup>
+            <ToggleGroup fx:id="k" />
+         </toggleGroup>
+      </JFXToggleButton>
+      <JFXToggleButton fx:id="snow" layoutX="38.0" layoutY="272.0" onAction="#snowy" prefHeight="72.0" prefWidth="181.0" size="15.0" text="SNOWY" textFill="#09ff00" toggleColor="#c4ffdb" toggleGroup="$k" toggleLineColor="#3dba4f" unToggleColor="#01ff45" unToggleLineColor="WHITE">
+         <font>
+            <Font name="MrRobot" size="20.0" />
+         </font>
+      </JFXToggleButton>
+      <JFXToggleButton fx:id="sun" layoutX="37.0" layoutY="161.0" onAction="#sunny" selected="true" size="15.0" text="SUNNY" textFill="#eee604" toggleColor="#f2ff00" toggleGroup="$k" toggleLineColor="#eaff08" unToggleColor="#fffb00" unToggleLineColor="#fffdfd">
+         <font>
+            <Font name="MrRobot" size="20.0" />
+         </font>
+      </JFXToggleButton>
+   </children>
+</AnchorPane>

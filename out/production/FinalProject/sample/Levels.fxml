@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <ImageView fitHeight="600.0" fitWidth="500.0">
+         <image>
+            <Image url="@Pi/mainGround.jpg" />
+         </image>
+      </ImageView>
+      <JFXButton fx:id="level1" layoutX="82.0" layoutY="244.0" onAction="#levelone" text="LEVEL 1" textFill="RED">
+         <font>
+            <Font name="MrRobot" size="30.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="level2" layoutX="285.0" layoutY="244.0" onAction="#leveltwo" text="LEVEL 2" textFill="#e5ff00">
+         <font>
+            <Font name="MrRobot" size="30.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="level3" layoutX="79.0" layoutY="324.0" onAction="#levelthree" text="LEVEL 3" textFill="#05ff00">
+         <font>
+            <Font name="MrRobot" size="30.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="level4" layoutX="284.0" layoutY="324.0" onAction="#levelfor" text="LEVEL 4" textFill="#2200ff">
+         <font>
+            <Font name="MrRobot" size="30.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="backLevel" layoutX="188.0" layoutY="431.0" onAction="#backOfLvel" text="BACK" textFill="#ff7000">
+         <font>
+            <Font name="MrRobot" size="30.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>
